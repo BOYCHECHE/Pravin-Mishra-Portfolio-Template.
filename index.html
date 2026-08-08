@@ -472,8 +472,9 @@
 
           <!-- MANDATORY DMI PROOF LINE ADDED HERE -->
           <p class="dmi-proof">
-            <strong>Deployed by:</strong> DMI Mini-Sprint | Kennedy | | Week 1 | 2026
+            <strong>Deployed by:</strong> DMI Mini-Sprint | Your Name | <span id="deployDate"></span>
           </p>
+
 
           <div class="footer-socials">
             <a href="https://linkedin.com" target="_blank" aria-label="Pravin Mishra LinkedIn Profile"><i
@@ -541,6 +542,11 @@
     </div>
   </footer>
 
+  <script>
+    const date = new Date();
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
+    document.getElementById('deployDate').innerText = date.toLocaleDateString('en-GB', options);
+  </script>
 
 
 </body>

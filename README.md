@@ -40,3 +40,12 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+### Footer Deployment Date Implementation
+The application footer generates and injects the live deployment date dynamically via client-side JavaScript. 
+
+```html
+<span id="deployDate"></span>
+```
+
+The script extracts the local system runtime parameters using `toLocaleDateString` configured for `en-GB` format outputs (`DD Mon YYYY`).
